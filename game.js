@@ -105,8 +105,8 @@ class WarScene extends Phaser.Scene {
     constructor() {
         super({ key: 'WarScene' });
         this.suits = ['Pikes', 'Tiles', 'Hearts', 'Clovers'];
-        //this.ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'A'];
-        this.ranks = ['2', '3', '4']; //for testing speed
+        this.ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'A'];
+        //this.ranks = ['2', '3', '4']; //for testing speed
         this.cardScale = 0.25;
         this.cardOffset = 400;
         this.cardHeight = 930;
