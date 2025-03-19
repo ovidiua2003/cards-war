@@ -136,6 +136,10 @@ class WarScene extends Phaser.Scene {
     create() {
         console.log('create scene');
 
+        if (this.backgroundMusic) {
+            this.backgroundMusic.destroy();
+        }
+
         this.add.image(0, 0, 'background').setOrigin(0, 0).setDisplaySize(config.width, config.height);
         this.backgroundMusic = this.sound.add('backgroundMusic');
         this.backgroundMusic.play({ loop: true });
